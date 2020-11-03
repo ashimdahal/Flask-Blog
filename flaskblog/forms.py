@@ -4,7 +4,7 @@ from flask_wtf.file import FileField, FileAllowed
 from wtforms.validators import DataRequired, Length, Email, EqualTo,ValidationError
 from flaskblog.models import User
 from flask_login import current_user
-
+# gets used in registering users in USER db
 class RegistrationForm(FlaskForm):
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])
