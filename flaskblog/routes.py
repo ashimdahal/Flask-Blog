@@ -7,8 +7,7 @@ from flaskblog.forms import RegistrationForm, LoginForm, UpdateAccountForm, Post
 from flaskblog.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
-
-
+#for home route
 @app.route("/")
 @app.route("/home")
 def home():
